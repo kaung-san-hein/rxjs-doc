@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operators</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.0/rxjs.umd.js"></script>
+  </head>
+  <body></body>
+  <script>
+    const { of, map, first, interval } = rxjs
+
+    // of(1, 2, 3)
+    //   .pipe(map((x) => x * x))
+    //   .subscribe((v) => console.log(`value: ${v}`))
+
+    // of(1, 2, 3)
+    //   .pipe(first())
+    //   .subscribe((v) => console.log(`value: ${v}`))
+
+    // const observable = interval(1000 /* number of milliseconds */)
+    // observable.subscribe((v) => console.log(v))
+  </script>
+</html>
