@@ -11,15 +11,15 @@
   <script>
     const { of, map, first, interval } = rxjs
 
-    // of(1, 2, 3)
-    //   .pipe(map((x) => x * x))
-    //   .subscribe((v) => console.log(`value: ${v}`))
+    of(1, 2, 3)
+      .pipe(map((x) => x * x))
+      .subscribe((v) => console.log(`value: ${v}`))
 
-    // of(1, 2, 3)
-    //   .pipe(first())
-    //   .subscribe((v) => console.log(`value: ${v}`))
+    of(1, 2, 3)
+      .pipe(first())
+      .subscribe((v) => console.log(`value: ${v}`))
 
-    // const observable = interval(1000 /* number of milliseconds */)
-    // observable.subscribe((v) => console.log(v))
+    const observable = interval(1000 /* number of milliseconds */)
+    observable.subscribe((v) => console.log(v))
   </script>
 </html>
